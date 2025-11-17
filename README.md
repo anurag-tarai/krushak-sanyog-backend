@@ -13,10 +13,7 @@ This repository contains the backend services, built using Java + Spring Boot, p
 ---
 
 ## 1. System Architecture Overview
-
-> Diagram Placeholder  
-Insert: *High-level System Architecture Diagram (Frontend → Backend → RDS → S3)*
-
+> ![farmerSystemDiagram.png](assets/farmerSystemDiagram.png)
 ---
 
 ## 2. Tech Stack
