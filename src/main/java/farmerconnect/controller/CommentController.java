@@ -19,7 +19,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @RestController
-@RequestMapping("ecom/comments")
+@RequestMapping("api/v1/comments")
 @RequiredArgsConstructor
 public class CommentController {
 

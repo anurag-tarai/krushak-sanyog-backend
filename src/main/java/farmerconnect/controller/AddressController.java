@@ -20,7 +20,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/ecom/customer-addresses")
+@RequestMapping("/api/v1/customer-addresses")
 public class AddressController {
 
     private final AddressService addressService;

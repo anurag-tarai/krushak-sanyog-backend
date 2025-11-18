@@ -1,12 +1,17 @@
 # Farmer Connect – Backend (Spring Boot)
 
+> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+> ![Project Status](https://img.shields.io/badge/status-ongoing-blue)
+
+
 Farmer Connect is a map-based discovery platform that helps people find nearby farmers and the fresh produce they grow.
 It is not an e-commerce marketplace — the platform does not provide online ordering, payment, or delivery.
 Instead, it acts as a local discovery tool, enabling direct communication between buyers and farmers.
 
 This repository contains the backend services, built using Java + Spring Boot, powering authentication, product listings, geolocation search, comments, wishlist, farmer tools, and more.
 
-> Live Application: https://farmer-connect-web.vercel.app/
+> [![Live Demo](https://img.shields.io/badge/Live-Demo-green)](https://farmer-connect-web.vercel.app/)
 
 > Frontend: https://github.com/anurag-tarai/krushak-sanyog-frontend   
 
@@ -57,8 +62,7 @@ Maven: Maven wrapper + recommended local installation
 
 ## 4. Backend Architecture
 
-> Diagram Placeholder  
-Insert: *3-Tier / Clean Architecture Diagram*
+> Diagram Placeholder
 
 ---
 
@@ -162,10 +166,36 @@ jwt.expiration-ms=${JWT_EXPIRATION_MS}
 
 ## 8. API Documentation
 
-Swagger API Docs:
+The backend APIs are documented using Swagger (springdoc-openapi).  
+You can view the API structure and endpoints in the screenshots below:
 
-> https://farmerconnect-backend.onrender.com/swagger-ui/index.html
+> ![Swagger](https://img.shields.io/badge/API-Swagger-blue)
 
+### Auth Controller
+![Swagger - Auth Controller](assets/swagger/auth.png)
+
+### Product Controller
+![Swagger - Product Controller](assets/swagger/product.png)
+
+### Wishlist Controller
+![Swagger - Wishlist Controller](assets/swagger/wishlist.png)
+
+### User Controller
+![Swagger - User Controller](assets/swagger/user.png)
+
+### Address Controller
+![Swagger - Address Controller](assets/swagger/address.png)
+
+### Comment Controller
+![Swagger - Comment Controller](assets/swagger/comment.png)
+
+
+
+### Health Check
+![Swagger - Health Check](assets/swagger/health.png)
+
+> To explore the APIs interactively, clone the repository and run the backend locally.  
+> Swagger UI will be available at: `http://localhost:8181/swagger-ui/index.html`
 
 ---
 
@@ -195,7 +225,7 @@ Swagger API Docs:
 ## 10. Deployment Architecture
 
 > Diagram Placeholder  
-Insert: *Render (Backend) → AWS RDS → AWS S3 → Vercel (Frontend)*
+*Render (Backend) → AWS RDS → AWS S3 → Vercel (Frontend)*
 
 ---
 
@@ -212,7 +242,7 @@ Insert: *Render (Backend) → AWS RDS → AWS S3 → Vercel (Frontend)*
 ## 12. Future Enhancements
 
 - Farmer profiles
-- WebSocket live updates
+- Farmer profile explore
 - Recommendation engine for farmers/products
 - Optimized asset delivery with S3 presigned URLs
 
@@ -220,4 +250,6 @@ Insert: *Render (Backend) → AWS RDS → AWS S3 → Vercel (Frontend)*
 
 ## 13. License
 
-MIT License (update as needed)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
